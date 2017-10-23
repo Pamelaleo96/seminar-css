@@ -41,6 +41,7 @@ nav {
     transform: translateY(-50%) ;/*transformar se traslada 50% para arriba*/
 }
 
+/*cONVIENE UN SECTION PARA APLICAR CAMBIOS A TODOS EN UNO*/
 section {
     text-align: center; /*centramos toda nuestra seccion2*/
 }
@@ -48,4 +49,40 @@ section {
 div {
     display: inline-block;
     width: 33%;
+}
+
+/*Modificaremos iconos*/
+span {
+    font-size: 60px; /*Tamaño de los iconos*/
+}
+
+body section:last-child { /*Separamos los iconos con la seccion 2 parte superior*/
+    margin:30px 50px 0px 60px; /*espacios entre margenes de cada letra*/
+}
+
+/*´por especificidad.(regla cascada) hace caso primero a la clase antes que al elemento*/
+img[alt="icono-laboratoria"] { /*Cambiamos el tamaño de la imagen mediante slector atributos*/
+    width: 120px;
+}
+
+/*Dar estilos a nuestro boton*/
+button {
+    background-color: #f9a91a;
+    padding: 10px;
+    color: white;
+    border: 0;
+    border-radius: 5px; /*Hacemos un circulo, bordeamos las esquinas*/
+    font-weight: 600px; /*Grosor de las letras*/
+}
+.box-header ul li { /*12 de especifidad*/
+    margin: 0px 15px; /**/
+}
+
+/*Iteraciones*/
+span:hover {
+    color: #f9a91a; /*Cambia de color el icono cuando pasan por encima*/
+}
+
+.box-header ul li:hover {
+    color: #f9a91a; /*Cambia de color nuestro nav*/
 }
