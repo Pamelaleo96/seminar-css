@@ -1,0 +1,51 @@
+/*Setear=""*/
+body {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #303030;
+}
+
+/*Clase reutilizado*/
+.text-uppercase {
+    text-transform: uppercase; /*trasnsformamos el tipo de texto a mayuscula*/
+}
+
+.box-header {
+    display: inline-block; 
+}
+
+.logo-header {
+    width: 200px;
+}
+
+li {
+    display: inline; /*Coloque cada lista en una sola linea*/
+    list-style: none; /*Desaparece las viñetas de mi lista*/
+}
+
+li a {
+    color: inherit; /*Hereda el color de su padre (body)*/
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%) ;/*transformar se traslada 50% para arriba*/
+}
+
+section {
+    text-align: center; /*centramos toda nuestra seccion2*/
+}
+
+div {
+    display: inline-block;
+    width: 33%;
+}
